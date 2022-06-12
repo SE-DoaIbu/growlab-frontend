@@ -1,7 +1,32 @@
 @import '../../assets/main.scss';
 
+// Option
+.cardtop {
+    border: none;
+    background-color: white;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: auto;
+    height: 75px;
+}
+
+.btn-secondary{
+    color: $shamrock;
+    background-color: $silver-light;
+    border: none;
+    border-radius: 10px;
+}
+
+// Cari Reviewer
+body{
+    background-color: #F5F6FA;
+}
+
 .card {
     border-radius: 12px;
+    background-color: white;
 }
 
 .max-height {
@@ -15,6 +40,9 @@ a {
 .profpic {
     width: 100px;
     height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    
 }
 
 .pill-wrapper {

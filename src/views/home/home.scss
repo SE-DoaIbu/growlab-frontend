@@ -1,8 +1,11 @@
 @import '../../assets/main.scss';
-
 .text-mysin {
     color: $mysin;
     font-weight: bold;
+}
+
+.text-wrapper {
+    padding: 0 250px 0 0;
 }
 
 .card {
@@ -15,7 +18,7 @@ img {
     height: 75px;
 }
 
-i{
+i {
     height: 20px;
 }
 
@@ -31,10 +34,18 @@ i{
     border: 1px solid rgba(0, 0, 0, 0.3);
     box-shadow: 4px 4px 34px 30px rgba(196, 225, 222, 0.05);
     border-radius: 20px;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
 }
 
-.dropdown-menu{
+.dropdown-menu {
     border-radius: 20px;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
 }
 
 .button {
@@ -45,6 +56,10 @@ i{
     border-color: $shamrock;
     text-align: center;
     padding: 10px;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
 }
 
 .button:hover {
@@ -57,8 +72,29 @@ i{
     margin: auto;
 }
 
-.grey{
+.option {
+    padding: 0;
+}
+
+.radio {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+.grey {
     padding: 10px;
     background-color: #F8FAFB;
     border-radius: 20px 0 20px 0;
+}
+
+// About
+#about {
+    background-image: url(../../assets/img/bg-1.png);
+}
+
+.btn {
+    border-radius: 10px;
 }

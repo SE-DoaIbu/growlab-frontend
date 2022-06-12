@@ -18,7 +18,7 @@
       </div>
 
       <div class="card p-5 border-0 rounded-5">
-        <form class="form-signin">
+        <form class="form-signin" @submit.prevent="login">
           <h3>Masuk/Daftar</h3>
           <p>Perjalanan karirmu dimulai dari sini.</p>
 
@@ -62,15 +62,31 @@
 <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
 
 <script>
+// import axios from "axios";
+
 export default {
   name: 'signin',
   data() {
     return {
-      email: ''
+      email: '',
+      // password: ''
     }
   },
   methods: {
-
+    // async login() {
+    //   const { email, password } = this;
+    //   const {
+    //     data: { token }
+    //   } = await axios.post(
+    //     // "https://ClosedThirdPixels--five-nine.repl.co/auth/login",
+    //     {
+    //       password: password,
+    //       email: email
+    //     }
+    //   );
+    //   this.$session.start();
+    //   this.$session.set("jwt", token);
+    // }
   }
 }
 </script>

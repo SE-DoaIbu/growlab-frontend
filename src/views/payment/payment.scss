@@ -1,2 +1,98 @@
 @import '../../assets/main.scss';
+* {
+    // font-family: 'Source Sans Pro', sans-serif;
+    color: $cyprus;
+    a {
+        color: $cyprus;
+        &:hover {
+            color: $shamrock;
+            cursor: pointer;
+        }
+        &:active {
+            color: $shamrock-dark;
+            cursor: pointer;
+        }
+    }
+    .card {
+        border-radius: 12px;
+        border: none;
+    }
+}
 
+.page {
+    min-height: 870px;
+    max-height: fit-content;
+}
+
+// Stepper
+.step-wrapper {
+    p {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: small;
+    }
+}
+
+.border {
+    width: 30px;
+    height: 30px;
+}
+
+// Other
+hr {
+    width: 20px;
+}
+
+.form-control {
+    border-radius: 12px;
+}
+
+.form-select {
+    background-color: $silver-light;
+    border-radius: 8px;
+    border: none;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.pill-3 {
+    background-color: $silver-light;
+}
+
+.info {
+    a {
+        color: $shamrock;
+        text-decoration: none;
+    }
+}
+
+.price {
+    font-weight: 500;
+}
+
+.dash {
+    border-top: 1px dashed $silver-light;
+}
+
+.front {
+    z-index: 1;
+}
+
+.back {
+    top: -40px;
+    .btn {
+        border-radius: 12px;
+        background-color: $shamrock;
+        border-color: $shamrock;
+        &:hover {
+            background-color: $shamrock-dark;
+        }
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}

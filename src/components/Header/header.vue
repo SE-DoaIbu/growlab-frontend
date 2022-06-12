@@ -1,7 +1,7 @@
 <template>
   <header class="sticky-top bg-white">
     <nav class="container navbar navbar-expand-xl navbar-nav navbar-light">
-      <div class="container-fluid">
+      <div class="container-fluid px-0">
         <router-link to="/">
           <img src="@/assets/logo.png" class="me-xxl-5 mx-xl-3 my-3 ms-0 ps-0">
         </router-link>
@@ -17,9 +17,9 @@
                 Solusi Kami
               </router-link>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Paket Premium</a></li>
                 <li><a class="dropdown-item" href="#">Review CV</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Konsultasi CV</a></li>
               </ul>
             </li>
             <li class="nav-item me-xxl-5 mx-xl-3">
@@ -49,5 +49,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../Header/header.scss';
+@import './header.scss';
 </style>
